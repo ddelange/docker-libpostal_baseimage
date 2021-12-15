@@ -17,7 +17,7 @@ RUN ./bootstrap.sh && \
     ldconfig
 
 # main image
-FROM pelias/baseimage
+FROM pelias/baseimage:nodejs-16
 
 COPY --from=builder /usr/share/libpostal /usr/share/libpostal
 COPY --from=builder /libpostal /
