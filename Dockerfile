@@ -1,5 +1,5 @@
 # builder image
-FROM pelias/baseimage as builder
+FROM pelias/baseimage:nodejs-18 as builder
 
 # libpostal apt dependencies
 # note: this is done in one command in order to keep down the size of intermediate containers
